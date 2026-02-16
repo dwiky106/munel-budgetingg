@@ -7,7 +7,7 @@ function tambahPengeluaran() {
     const div = document.createElement("div");
     div.className = "rowPengeluaran";
     div.innerHTML = `
-        <input type="text" class="keterangan" placeholder="Keterangan (contoh: Kontrakan)">
+        <input type="text" class="keterangan" placeholder="Keterangan (contoh: mik susu)">
         <input type="number" class="pengeluaran" placeholder="Jumlah">
     `;
 
@@ -93,3 +93,4 @@ function downloadPNG() {
         link.click();
     });
 }
+
