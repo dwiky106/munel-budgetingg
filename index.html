@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Budgeting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Library untuk export PNG -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Budgeting Punya Ayang</h1>
+
+    <div class="card">
+        <label>Masukkan Jumlah Semua Uangmu</label>
+        <input type="number" id="totalUang" placeholder="Contoh: 1000000">
+    </div>
+
+    <div class="card">
+        <label>Masukkan Pengeluaran Pokok</label>
+        <div id="pengeluaranList">
+            <div class="rowPengeluaran">
+                <input type="text" class="keterangan" placeholder="Keterangan (contoh: Kontrakan)">
+                <input type="number" class="pengeluaran" placeholder="Jumlah">
+            </div>
+        </div>
+        <button class="btn-tambah" onclick="tambahPengeluaran()">
+    Tambahkan Pengeluaran Pokok
+    </button>
+    <button class="btn-cetak" onclick="cetakStruk()">Cetak Struk Pengeluaran</button>
+    <button class="btn-download" onclick="downloadPNG()">Download PNG Struk</button>
+
+    <div id="strukArea"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
